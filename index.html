@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_profile_page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!------personal profile section-------->
+    <header>
+       <h3> personal profile</h3>
+    </header>
+
+
+    <!------section-1------->
+    <section>
+       <p>background image</p>
+
+
+     <!------photo section-1-----slack display image-->
+
+       <div class="profile-image" >
+      <img src="pfp.jpg" alt="Godwin-Andrew" data-testid="slackImageDisplay">
+      
+       </div>
+       
+       
+    </section>
+
+    <!----------------wave code------------------>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="rgb(77, 71, 71)" fill-opacity="1" d="M0,288L40,256C80,224,160,160,240,149.3C320,139,400,181,480,192C560,203,640,181,720,165.3C800,149,880,139,960,154.7C1040,171,1120,213,1200,213.3C1280,213,1360,171,1400,149.3L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+      </svg>
+
+      <!----------end----wave code------------------>
+
+
+
+      <!-----information section---->
+
+       
+        <div class="information-container">
+        
+
+       <!-----slack-Name-------->
+        <div class="info-data">
+        <label>Slack display picture</label>
+        
+        </div>
+        <br>
+
+
+         <!-----slack-Name-------->
+        <div class="info-data">
+        <label  >Slack Name:</label>
+        <span class="prominent-font" data-testid="slackUserName">Godwin Andrew</span>
+        </div>
+
+
+       <!-----current day of the week-------->
+        <div class="info-data" >
+        <label >Current day of the week:</label>
+        <span id="day" data-testid="currentDayOfTheWeek">Friday</span>
+        </div>
+
+
+        <!-----UTC time-------->
+        <div class="info-data" >
+        <label >Current UTC time:</label>
+        <span id="currentUTC" data-testid="currentUTCTime"></span>
+        </div>
+
+
+
+        <!-----My Track-------->
+        <div class="info-data" >
+        <label  data-testid="myTrack">Track:</label>
+        <span>Frontend Track</span>
+        </div>
+        
+        
+    
+
+
+    </div>
+
+    <!------footer section-------->
+   <footer>
+    <a href="">Click  here</a> for my Github page
+   </footer>
+
+ <script src="script.js"></script>
+    
+</body>
+</html>

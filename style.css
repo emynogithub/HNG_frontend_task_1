@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0 3rem;
+    /* background-color: black; */
+}
+/*********personal profile*******/
+
+:root{
+    --background1:rgb(89, 83, 83);
+    --background2:rgb(77, 71, 71);
+    --line-color: rgb(130, 126, 126);
+}
+
+header{
+    background-color: var(--background1);
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--line-color);
+}
+
+
+/****************/
+
+section{
+    height: 30vh;
+    background-color: var(--background2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:8rem;
+
+}
+
+section p{
+    color:var(--background1);
+    font-size: 2rem;
+    
+  
+
+}
+
+section .profile-image{
+    border:2px solid var(--line-color);
+    height: 15rem;
+    width:18rem;
+    border-radius: 50% /50%;
+    margin-bottom: -15rem;
+    background-color: beige;
+    box-shadow: 1px 1px 9px white;
+    position: relative;
+    z-index: 999;
+
+}
+
+section .profile-image img{
+    width:100%;
+    height: 100%;
+    border-radius: 50% /50%;
+
+}
+
+/*****information section**********/
+
+.information-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap:1rem;
+
+}
+
+.information-container label{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+/* .information-container span{
+    font-size: 1.3rem;
+  } */
+.prominent-font{
+    font-size: 2rem;
+}
+
+
+/*******footer******/
+footer{
+    background-color: var(--background2);
+    height: 3rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 1.2rem;
+}
+
+
+/***media for the section and image***/
+@media(max-width:700px){
+    section .profile-image{
+        height: 11rem;
+        width:14rem;
+       
+    
+    }
+
+    section{
+        gap:2rem;
+    }
+
+   
+}
+
+@media(max-width:1133px){
+    .information-container{
+        padding-top: 4rem;
+        /* border:2px solid red; */
+    }
+}
+
+@media(max-width:769px){
+    .information-container{
+        padding-top: 7rem;
+        /* border:2px solid red; */
+    }
+}
+
+
+
